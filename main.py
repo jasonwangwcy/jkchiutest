@@ -40,6 +40,9 @@ for _, row in df.iterrows():
     A_list.append(A)
     B_list.append(B)
 
+print("A 累積最大值:", max(A_list), "Byte")
+print("B 累積最大值:", max(B_list), "Byte")
+
 # 畫圖
 plt.figure(figsize=(14, 7))
 plt.plot(time_list, A_list, label="General (Alloca/Realloc+/free)", color="blue", linewidth=1)
